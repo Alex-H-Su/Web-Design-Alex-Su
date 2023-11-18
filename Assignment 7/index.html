@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(255, 240, 240);
+        }
+        h1 {
+            color: #fd0202;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pizza Builder</h1>
+
+    <!-- Sized Images -->
+    <img src="../Assignment 7/images/meatlovers.webp" alt="Delicious Pizza">
+
+    <form id="pizzaForm">
+        <!-- Table -->
+        <h2>Toppings</h2>
+        <table border="1">
+            <tr>
+                <th>Topping</th>
+                <th>Add</th>
+            </tr>
+            <tr>
+                <td>Pepperoni</td>
+                <td><input type="checkbox" name="topping" value="pepperoni"></td>
+            </tr>
+            <tr>
+                <td>Mushrooms</td>
+                <td><input type="checkbox" name="topping" value="mushrooms"></td>
+            </tr>
+            <tr>
+                <td>Onions</td>
+                <td><input type="checkbox" name="topping" value="onions"></td>
+            </tr>
+            <tr>
+                <td>Sausage</td>
+                <td><input type="checkbox" name="topping" value="sausage"></td>
+            </tr>
+            <tr>
+                <td>Green Peppers</td>
+                <td><input type="checkbox" name="topping" value="greenPeppers"></td>
+            </tr>
+            <tr>
+                <td>Canadian Bacon</td>
+                <td><input type="checkbox" name="topping" value="canadianbacon"></td>
+            </tr>
+            <tr>
+                <td>Pineapple</td>
+                <td><input type="checkbox" name="topping" value="pineapple"></td>
+            </tr>
+        </table>
+
+        <!-- Form with Textarea -->
+        <label for="specialInstructions">Special Instructions:</label>
+        <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50" placeholder="Any special instructions for your pizza?"></textarea>
+
+        <!-- Radio Buttons -->
+        <h2>Pizza Size</h2>
+        <label>
+            <input type="radio" name="pizzaSize" value="small"> Small
+        </label>
+        <label>
+            <input type="radio" name="pizzaSize" value="medium"> Medium
+        </label>
+        <label>
+            <input type="radio" name="pizzaSize" value="large"> Large
+        </label>
+        <label>
+            <input type="radio" name="pizzaSize" value="extralarge"> Extra-Large
+        </label>
+        <!-- Buttons -->
+        <button type="button" onclick="buildPizza()">Build Pizza</button>
+    </form>
+
+    <!-- Radio Buttons -->
+    <h2>Delivery or Pick-up</h2>
+    <label>
+        <input type="radio" name="service" value="pickup"> Pick-up
+    </label>
+    <label>
+        <input type="radio" name="service" value="delivery"> Delivery
+    </label>
+    <!-- Buttons -->
+    <button type="button" onclick="buildPizza()">Submit Service:</button>
+</form>
+
+
+    <div id="pizzaResult"></div>
+
+    <script>
+        function buildPizza() {
+            const form = document.getElementById('pizzaForm');
+            const selectedToppings = Array.from(form.elements['topping'])
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+
+            const pizzaSize = Array.from(form.elements['pizzaSize'])
+                .find(radio => radio.checked)?.value;
+
+            const specialInstructions = form.elements['specialInstructions'].value;
+
+            const pizzaResult = document.getElementById('pizzaResult');
+            pizzaResult.innerHTML = `
+                <h2>Your Pizza:</h2>
+                <p>Size: ${pizzaSize}</p>
+                <p>Toppings: ${selectedToppings.join(', ')}</p>
+                <p>Special Instructions: ${specialInstructions}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
