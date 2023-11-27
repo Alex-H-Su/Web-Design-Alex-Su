@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid blue(221, 221, 221)221, 221, 313;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(216, 31, 31);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Sized Images (Pizza Image) -->
+    <h2>Pizza maker (This Website Is Fake)</h2>
+    <img src="../Assignment 7/images/meatlovers.webp" alt="Delicious Pizza" width="600" height="400">
+    <!-- 2. Table (Pizza Menu) -->
+    <h2>2. Pizza Menu</h2>
+    <table>
+        <tr>
+            <th>Pizza Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Margherita</td>
+            <td>$10.99</td>
+        </tr>
+        <tr>
+            <td>Pepperoni</td>
+            <td>$12.99</td>
+        </tr>
+        <tr>
+            <td>Veggie Delight</td>
+            <td>$11.99</td>
+        </tr>
+        <tr>
+            <td>Cheese</td>
+            <td>$10.99</td>
+        </tr> 
+        <tr>
+            <td>Meat Lovers</td>
+            <td>$18.99</td>
+        </tr> 
+        <tr>
+            <td>Combo Pizza</td>
+            <td>$19.99</td>
+        </tr>
+        <tr>
+            <td>24k Gold Pizza</td>
+            <td>$1299.99</td>
+        </tr>
+        <tr>
+            <td>Anti-matter pizza</td>
+            <td>1,000,000,000 BTC</td>
+        </tr>
+    </table>
+
+    <!-- 3. Order Form -->
+    <h2>3. Place Your Pizza Order</h2>
+    <form action="/order" method="post">
+        <label for="pizza-type">Choose your pizza:</label>
+        <select id="pizza-type" name="pizza-type" required>
+            <option value="margherita">Margherita</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="Cheese">Cheese</option>
+            <option value="veggie">Veggie Delight</option>
+            <option value="Meat Lovers">Meat Lovers</option>
+            <option value="Combo Pizza">Combo Pizza</option>
+            <option value="24k Gold Pizza">24k Gold Pizza</option>
+            <option value="Anti-matter pizza">Anti-matter pizza</option>
+        </select>
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <br>
+        <label>
+            <input type="checkbox" name="extras" value="extra-cheese"> Extra Cheese (+$2.00)
+        </label>
+        <br>
+        <input type="submit" value="Place Order">
+    </form>
+
+    <!-- 4. Pizza Size Options -->
+    <h2>4. Choose Pizza Size</h2>
+    <input type="radio" id="small" name="size" value="small" checked>
+    <label for="small">Small</label>
+    <br>
+    <input type="radio" id="medium" name="size" value="medium">
+    <label for="medium">Medium</label>
+    <br>
+    <input type="radio" id="large" name="size" value="large">
+    <label for="large">Large</label>
+    <br>
+    <input type="radio" id="extra-large" name="size" value="extra-large">
+    <label for="large">Extra-Large</label>
+
+    <!-- 5. Pizza Toppings (Checkboxes) -->
+    <h2>5. Choose Toppings</h2>
+    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni" checked>
+    <label for="pepperoni">Pepperoni</label>
+    <br>
+    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <br>
+    <input type="checkbox" id="olives" name="topping" value="olives">
+    <label for="olives">Olives</label>
+    <br>
+    <input type="checkbox" id="bacon" name="topping" value="bacon">
+    <label for="mushrooms">Mushrooms</label>
+    <br>
+    <input type="checkbox" id="sausage" name="topping" value="sausage">
+    <label for="mushrooms">Mushrooms</label>
+    <br>
+    <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+    <label for="mushrooms">Mushrooms</label>
+    <br>
+
+    <!-- 6. Order Button -->
+    <h2>6. Place Your Pizza Order</h2>
+    <button type="button" onclick="alert('Your pizza order has been placed!')">Place Order</button>
+
+    <!-- 7. Delivery Instructions (Textarea) -->
+    <h2>7. Delivery Instructions</h2>
+    <textarea rows="4" cols="50" placeholder="Special instructions for delivery..."></textarea>
+
+</body>
+</html>
