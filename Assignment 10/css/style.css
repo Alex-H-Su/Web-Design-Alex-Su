@@ -1,0 +1,48 @@
+/* External CSS Stylesheet */
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Class selector styles */
+.highlight-text {
+    color: #6933ff; /* Orange text color for the highlighted text class */
+}
+
+/* ID selector styles */
+#unique-section {
+    background-color: #499fe6; /* Blue background color for the unique section ID */
+    color: #fff; /* White text color for the unique section ID */
+    padding: 50px;
+    text-align: center;
+}
+
+/* Background color and font color for the body */
+body {
+    border-style: solid;
+    border-width: 50px;
+    border-color: rgb(78, 7, 243);
+    background-color: #0acafa; /* Light gray background color for the body */
+    color: #333; /* Dark gray text color for the body */
+    text-align: center;
+}
+
+/* Positioning and opacity for an element with class box */
+.box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #08cdf0; /* Red background color for the box */
+    color: #fff; /* White text color for the box */
+    padding: 10px;
+    opacity: 0.8; /* 80% opacity for the box */
+}
+
+/* Divider line */
+.divider {
+    border-top: 10px solid #303131; /* Divider: 2px solid line */
+    border-bottom: 10px solid #303131; /* Divider: 2px solid line */
+}
