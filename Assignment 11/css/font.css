@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Arvo-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Arvo-Bold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Arvo-Italic.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Arvo-BoldItalic.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  

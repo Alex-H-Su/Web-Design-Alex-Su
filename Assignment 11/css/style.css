@@ -1,0 +1,65 @@
+ /* External font example */
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Smooch+Sans:wght@100&display=swap');
+
+  body {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  /* Header Styles */
+  
+  header {
+    background-color: #333;
+    color: #0aa7f0;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  /* Main Content Styles */
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Paragraph Styles */
+  
+  p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  /* Link Styles */
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #e74c3c;
+  }
+  
+  /* Pseudo-class example */
+  
+  p:first-child {
+    font-style: italic;
+  }
+  
+  
