@@ -1,1 +1,0 @@
-This is assignment 11 and in this assignment, this website is a website regarding information about the rubber hand illusion. 
