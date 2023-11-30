@@ -2,13 +2,15 @@
  
   @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Smooch+Sans:wght@100&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Raleway:wght@100;400&family=Smooch+Sans:wght@100&display=swap');
+
   body {
-    font-family: 'arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e1f14f;
+    background-color: #4fc3f1;
     border-style: solid;
     border-width: 15px;
     border-color: black;
@@ -37,6 +39,7 @@
   /* Hover */
   a:hover {
     color: #e74c3c;
+    
   }
   
   /* Pseudo-class example */
