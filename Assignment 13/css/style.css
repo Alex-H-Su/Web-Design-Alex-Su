@@ -11,7 +11,6 @@ body {
     text-align: center;
 }
  
-/* Add border around the main section */
 main {
     padding: 20px;
     border: 2px solid #333; /* Border color and width */
@@ -84,15 +83,26 @@ li > a:after {
     margin-left: 5px;
 }
 
-li > a:only-child:after {
-    content: '';
-}
-
 /* Taco Information */
 .taco-information {
     margin-top: 20px;
     border: 2px solid brown;
     padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 10px; /* Optional: Add padding for better readability */
+}
+
+
+th, td {
+    padding: 8px;
     text-align: center;
 }
 
@@ -139,5 +149,5 @@ footer {
     text-align: center;
     padding: 5px;
     bottom: 0;
-    width: 99.4%;
+    width: 99.45%;
 }

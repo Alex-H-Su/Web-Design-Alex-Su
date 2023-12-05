@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Your Thematic Website</title>
+    <title>Build you own Delicous Taco!!!!</title>
 </head>
-
-<style>
-/* Style for form */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-</style>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/about.html">About</a></li>
+                
                 <li><a href="../pages/services.html">Services</a></li>
                 <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
@@ -29,90 +20,79 @@ form {
     </header>
 
     <section class="main-content">
-        <h1>Welcome to Your Thematic Website</h1>
-        <!-- Your main content goes here -->
+        <h1>DIY Taco Maker</h1>
     </section>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Taco Paradise</title>
-        <link type="text/css" rel="stylesheet" href="../Assignment 7/css/style.css">
-    </head>
-    <body>
-    
     <!-- 1. Sized Images (Taco Image) -->
-    <h2>Taco Paradise (This Website Is Deliciously Fake)</h2>
-    <img src="../Assignment 7/images/taco-delight.jpg" alt="Delicious Taco" width="600" height="400">
-    
+    <h2>(This Website Is Delicously Fake)</h2>
+    <img src="../images/taco-taco-time.gif" alt="Delicious Tacos" width="600" height="400">
+
     <!-- 2. Table (Taco Menu) -->
     <h2>2. Taco Menu</h2>
+
     <table>
         <tr>
             <th>Taco Name</th>
             <th>Price</th>
         </tr>
         <tr>
-            <td>Classic Carnitas</td>
-            <td>$3.99</td>
+            <td>Classic Taco</td>
+            <td>$7.99</td>
         </tr>
         <tr>
-            <td>Spicy Chicken</td>
-            <td>$4.99</td>
+            <td>Spicy Chicken Taco</td>
+            <td>$9.99</td>
         </tr>
         <tr>
-            <td>Veggie Delight</td>
-            <td>$3.49</td>
+            <td>Veggie Delight Taco</td>
+            <td>$8.99</td>
         </tr>
         <tr>
-            <td>Cheese Quesadilla</td>
-            <td>$2.99</td>
+            <td>Cheese Taco</td>
+            <td>$7.99</td>
+        </tr> 
+        <tr>
+            <td>Guacamole Lovers Taco</td>
+            <td>$12.99</td>
+        </tr> 
+        <tr>
+            <td>Combo Taco</td>
+            <td>$14.99</td>
         </tr>
         <tr>
-            <td>Seafood Sensation</td>
-            <td>$6.99</td>
+            <td>Golden Taco</td>
+            <td>$9999.99</td>
         </tr>
         <tr>
-            <td>Taco Supreme</td>
-            <td>$5.99</td>
-        </tr>
-        <tr>
-            <td>Golden Guacamole Taco</td>
-            <td>$29.99</td>
-        </tr>
-        <tr>
-            <td>Quantum Crunch Taco</td>
+            <td>Quantum Taco</td>
             <td>1,000,000,000 BTC</td>
         </tr>
     </table>
-    
+
     <!-- 3. Order Form -->
-    <h2>3. Build Your Taco</h2>
+    <h2>3. Place Your Taco Order</h2>
     <form action="/order" method="post">
         <label for="taco-type">Choose your taco:</label>
         <select id="taco-type" name="taco-type" required>
-            <option value="carnitas">Classic Carnitas</option>
-            <option value="spicy-chicken">Spicy Chicken</option>
-            <option value="veggie">Veggie Delight</option>
-            <option value="quesadilla">Cheese Quesadilla</option>
-            <option value="seafood">Seafood Sensation</option>
-            <option value="supreme">Taco Supreme</option>
-            <option value="golden-guacamole">Golden Guacamole Taco</option>
-            <option value="quantum-crunch">Quantum Crunch Taco</option>
-            
+            <option value="classic">Classic Taco</option>
+            <option value="spicy-chicken">Spicy Chicken Taco</option>
+            <option value="cheese">Cheese Taco</option>
+            <option value="veggie">Veggie Delight Taco</option>
+            <option value="guacamole-lovers">Guacamole Lovers Taco</option>
+            <option value="combo">Combo Taco</option>
+            <option value="golden">Golden Taco</option>
+            <option value="quantum">Quantum Taco</option>
         </select>
         <br>
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
         <br>
         <label>
-            <input type="checkbox" name="extras" value="extra-cheese"> Extra Cheese (+$1.00)
+            <input type="checkbox" name="extras" value="extra-cheese"> Extra Cheese (+$2.00)
         </label>
         <br>
-        <input type="submit" value="Build Taco">
+        <input type="submit" value="Place Order">
     </form>
-    
+
     <!-- 4. Taco Size Options -->
     <h2>4. Choose Taco Size</h2>
     <input type="radio" id="small" name="size" value="small" checked>
@@ -126,42 +106,44 @@ form {
     <br>
     <input type="radio" id="extra-large" name="size" value="extra-large">
     <label for="large">Extra-Large</label>
-    
+
     <!-- 5. Taco Toppings (Checkboxes) -->
     <h2>5. Choose Toppings</h2>
-    <input type="checkbox" id="guacamole" name="topping" value="guacamole" checked>
-    <label for="guacamole">Guacamole</label>
-    <br>
-    <input type="checkbox" id="salsa" name="topping" value="salsa">
+    <input type="checkbox" id="salsa" name="topping" value="salsa" checked>
     <label for="salsa">Salsa</label>
     <br>
-    <input type="checkbox" id="cheese" name="topping" value="cheese">
-    <label for="cheese">Cheese</label>
-    <br>
-    <input type="checkbox" id="sour-cream" name="topping" value="sour-cream">
-    <label for="sour-cream">Sour Cream</label>
-    <br>
-    <input type="checkbox" id="jalapenos" name="topping" value="jalapenos">
-    <label for="jalapenos">Jalapenos</label>
+    <input type="checkbox" id="guacamole" name="topping" value="guacamole">
+    <label for="guacamole">Guacamole</label>
     <br>
     <input type="checkbox" id="cilantro" name="topping" value="cilantro">
     <label for="cilantro">Cilantro</label>
     <br>
-    
+    <input type="checkbox" id="onions" name="topping" value="onions">
+    <label for="onions">Onions</label>
+    <br>
+    <input type="checkbox" id="cheese" name="topping" value="cheese">
+    <label for="cheese">Cheese</label>
+    <br>
+    <input type="checkbox" id="sourcream" name="topping" value="sourcream">
+    <label for="cheese">Sour Cream</label>
+    <br>
+    <input type="checkbox" id="lettuce" name="topping" value="lettuce">
+    <label for="cheese">Cheese</label>
+    <br>
+    <input type="checkbox" id="extrameat" name="topping" value="extrameat">
+    <label for="extrameat">Extra Meat</label>
+    <br>
+
     <!-- 6. Order Button -->
-    <h2>6. Build Your Taco</h2>
-    <button type="button" onclick="alert('Your taco masterpiece is ready!')">Build Taco</button>
-    
-    <!-- 7. Taco Delivery Instructions (Textarea) -->
+    <h2>6. Place Your Taco Order</h2>
+    <button type="button" onclick="alert('Your taco order has been placed! Please go to the contact tab to confirm your order over the provided number!!!!')">Place Order</button>
+
+        <!-- 7. Delivery Instructions (Textarea) -->
     <h2>7. Delivery Instructions</h2>
     <textarea rows="4" cols="50" placeholder="Special instructions for taco delivery..."></textarea>
-    
-    </body>
-    </html>
-    
+
     <footer>
-        <!-- Footer content goes here -->
+        <p>&copy; 2023 Bing Chilling Corp. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
