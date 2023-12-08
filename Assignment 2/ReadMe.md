@@ -7,7 +7,7 @@ This is my assignment 2
 ##### E
 ###### F
 
-This allows The header size to change, making it larger for every hastag added to a certain header. 
+This allows The header size to change, making it smaller for every hastag added to a certain header. 
 
 **steak**
 _steak_
